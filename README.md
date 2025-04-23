@@ -1,42 +1,54 @@
-# 🧠 Machine Learning Models using PyTorch
+# 🧠 Machine Learning Models with PyTorch
 
-A collection of PyTorch-based implementations for binary classification tasks. This repository demonstrates the end-to-end workflow of building, training, and evaluating deep learning models using PyTorch.
+This repository demonstrates multiple machine learning model implementations using **PyTorch** for classification tasks, progressing from basic to structured neural networks.
 
 ## 📁 Repository Structure
 
-- `01_pytorch_workflow.ipynb` — Basic training workflow using PyTorch
-- `02_MCM.ipynb` — Custom model with manual training loop
-- `02_neural_networks.ipynb` — Neural network with `nn.Module` structure
-- `README.md` — Project overview
+| File | Description |
+|------|-------------|
+| `01_pytorch_workflow.ipynb` | 🔹 A basic linear binary classifier built from scratch using only tensors and matrix operations. |
+| `02_MCM.ipynb` | 🔹 Implements a Multi-Class Classification Model manually using PyTorch layers and custom loops. |
+| `02_neural_networks.ipynb` | 🔹 A structured `nn.Module` based model for binary classification using `BCEWithLogitsLoss`. |
 
-## 🚀 Project Highlights
+---
 
-- Built with **PyTorch**
-- Uses `BCELoss` / `BCEWithLogitsLoss` for binary classification
-- Trained using **SGD** optimizer
-- Clean training & evaluation loop with accuracy tracking
-- Easily extendable for more complex models and datasets
+## 📌 Models Overview
+
+### 1️⃣ Model 1 — `01_pytorch_workflow.ipynb`
+- Manually built classifier without `nn.Module`
+- Demonstrates basic understanding of weights, biases, loss, and gradient descent
+- Implements custom training loop using only tensors
+- Loss: `Binary Cross Entropy (BCE)`
+
+### 2️⃣ Model 2 — `02_MCM.ipynb`
+- A step-up in complexity: manually coded multiclass classification model
+- Uses custom functions for accuracy, forward propagation, and evaluation
+- Optimizer: SGD  
+- Loss: `CrossEntropyLoss`
+
+### 3️⃣ Model 3 — `02_neural_networks.ipynb`
+- Fully modular implementation using `nn.Module`
+- Suitable for binary classification tasks
+- Loss: `BCEWithLogitsLoss`
+- Optimizer: SGD
+- Follows best practices (model encapsulation, `train()` and `eval()` modes)
+
+---
 
 ## 🛠️ Features
 
-- Input data preprocessing
-- Model definition using `nn.Module`
-- Forward and backward pass
-- Manual training loop with metric logging
-- GPU-compatible structure (easily switch `device`)
+- 📦 Built with **PyTorch**
+- 🔁 Manual and modular training loops
+- 📊 Accuracy tracking & loss monitoring
+- 🔧 Easily adaptable to other datasets
+- ⚡ GPU-compatible structure
 
-## 📈 Results
+---
 
-Model achieves stable convergence on synthetic/binary classification tasks with optimized loss and validation accuracy.
+## 🚀 Getting Started
 
-## ✅ Dependencies
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AryanShukla2006/Machine-Learning-Models.git
+   cd Machine-Learning-Models
 
-- Python 3.8+
-- PyTorch
-- NumPy
-- Matplotlib
-- tqdm
-
-Install dependencies:
-```bash
-pip install -r requirements.txt
