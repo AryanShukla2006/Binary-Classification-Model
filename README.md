@@ -20,8 +20,8 @@ Machine-Learning-Models/
 ## 🚀 Models Overview & Results
 
 ### 🔹 Model 1 — `01_pytorch_workflow.ipynb`
-- **Type**: Binary Classification (Manual)
-- **Loss**: `Binary Cross Entropy (BCE)`
+- **Type**: Linear Regression Model 
+- **Loss**: `Mean loss`
 - **Optimizer**: Manual Gradient Descent
 - **Final Accuracy**: ~95%
 - **Final Loss**: ~0.05
