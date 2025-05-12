@@ -33,12 +33,12 @@ Machine-Learning-Models/
 - **Final Accuracy**: ~92%
 - **Final Loss**: ~0.18
 
-### 🔹 Model 3 — `02_neural_networks.ipynb`
-- **Type**: Binary Classification (Modular)
+### 🔹 Model 3 — `computer_vision.ipynb`
+- **Type**: CNN model on image classification (Modular)
 - **Loss**: `BCEWithLogitsLoss`
 - **Optimizer**: `SGD (lr=0.01)`
-- **Final Accuracy**: ~97%
-- **Final Loss**: ~0.03
+- **Final Accuracy**: ~83%
+- **Final Loss**: ~0.4
 
 > _Note: Metrics may slightly vary depending on seed and hardware._
 
